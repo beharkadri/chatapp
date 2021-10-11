@@ -111,7 +111,7 @@ function ChatMessage({ message }) {
     message.uid === auth.currentUser.uid ? 'sent' : 'received';
   return (
     <div className={`message ${messageClass}`}>
-      <img src={message.photoURL} />
+      <img src={message.photoURL} alt='Profile' />
       <p>{message.text}</p>
     </div>
   );
